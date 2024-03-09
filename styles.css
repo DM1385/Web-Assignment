@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #000000;
+
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #5d5d5c;
+  z-index: 99;
+}
+
+.nav__content {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fefefe;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+nav .checkbox {
+  display: none;
+
+}
+
+nav input {
+  display: none;
+}
+
+nav .checkbox i {
+  font-size: 2rem;
+  color: #000000;
+  cursor: pointer;
+}
+
+.nav-ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  transition: left 0.3s;
+}
+
+.nav-ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.nav-ul li a:hover {
+  border-bottom-color: #bb9f89;
+  color: #f6f8f9;
+}
+
+.nav-ul li .active {
+  color: #039be5;
+
+}
+
+.section {
+  background-color: #caa5f5;
+}
+
+.section__container {
+  min-height: 100vh;
+  max-width: 100%;
+  background-color: #abaef1;
+  padding: 0 10%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content .subtitle {
+  letter-spacing: 2px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 5rem;
+  color: #4a0f47;
+  margin-bottom: 1rem;
+  animation: slideIn 1s ease forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.title span {
+  font-weight: 600;
+}
+
+.description {
+  line-height: 1.5rem;
+  color: #6b7280;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.intro-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  background: transparent;
+  border: 2px solid #e0e07a;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  color: #634156;
+  text-decoration: none;
+  margin: 0.8rem 0.9rem 1.5rem 0;
+  transition: 0.5s ease;
+
+}
+
+.intro-social a:hover {
+  background: #039be5;
+  color: #080a0d;
+  box-shadow: 0 0 20px #039be5;
+}
+
+
+.action__btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.action__btns a {
+  font-size: 1rem;
+  text-decoration: none;
+  font-family: monospace;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 1rem 1.5rem;
+  background-color: #039be5;
+  color: #081b29;
+  border: 1px solid #039be5;
+  outline: none;
+  border-radius: 40px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.action__btns a:hover {
+  box-shadow: 0 0 10px #039be5;
+
+}
+
+.image {
+  display: grid;
+  place-items: center;
+}
+
+.image img {
+  width: min(25rem, 90%);
+  border-radius: 100%;
+  box-shadow: 0 0 10px #039be5;
+
+}
+
+.section-intro {
+  padding: 8% 10%;
+
+}
+
+
+.about-topic h5 {
+  text-align: center;
+  padding-bottom: 40px;
+  color: #039be5;
+  font-family: monospace;
+  font-size: 2.2rem;
+  line-height: 1.565;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+
+
+}
+
+.about-topic h1 {
+  font-family: sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  color: #70ebeb;
+
+}
+
+.intro-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+
+}
+
+.intro-info img {
+  width: 250px;
+  border-radius: 50%;
+  padding: 5% 20px;
+}
+
+.intro-info .lead {
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  padding: 30px 30px 20px 60px;
+  text-align: justify;
+
+}
+
+.personal-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-content {
+  background-color: rgb(127, 28, 28);
+  width: 100%;
+
+}
+
+
+
